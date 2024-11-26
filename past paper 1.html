@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Layout with Slideshow</title>
+    <style>
+	
+        body {
+            font-family: Arial, sans-serif;
+           
+            background-color: #f9f9f9;
+			color:white;
+			background-repeat:no-repeat;
+			background-size:Cover;
+			background-position:center;
+			
+
+
+
+
+
+}
+	
+	
+	
+      
+        /* Container for the normal images */
+        .normal-images {
+            display: flex;
+            justify-content: center;
+           
+        }
+
+        .normal-images img {
+            width: 300px;
+            height: auto;
+            margin: 10px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Slideshow container */
+        .slideshow-container {
+            width: 80%;
+            max-width: 500px;
+			max-height:800px;
+            margin: 50px auto;
+            position: relative;
+            background-color: #fff;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Image box inside the slideshow */
+        .slides {
+            display: flex;
+            transition: transform 1s ease-in-out;
+        }
+
+        .slide {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+
+        .slide img {
+            width: 500px;
+            height: 300px;
+            display: block;
+            border-radius: 10px;
+        }
+
+        /* Adding dots for navigation */
+        .dot-container {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+        }
+
+        .dot {
+            height: 15px;
+            width: 15px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            display: inline-block;
+            transition: background-color 0.3s;
+        }
+
+        .active-dot {
+            background-color: #717171;
+        }
+		header {
+    background-color: #1e1e1e;
+    padding: 20px;
+	margin-left:70px;
+	margin-right:60px;
+	color:yellow;
+	font-size:1.2rem
+	
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    font-size: 24px;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav input[type="text"] {
+    padding: 5px;
+    border: none;
+    border-radius: 4px;
+	text-decoration:none;
+}
+
+h2{
+   color:yellow;
+   font-family:algerian;
+   font-size:3rem;
+
+
+}
+
+
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #1e1e1e;
+    position: relative;
+    bottom: -100px;
+    width: 110%;
+	margin-left:-100px;
+	color:yellow;
+	
+}
+ 
+
+    </style>
+</head>
+<body>
+<header>
+        <nav>
+            <h1>E-Studies</h1>
+            <ul>
+                <li><a href="file:///C:/Users/user/Desktop/project%20file/new%20project/home%20page.html">Home</a></li>
+                <li><a href="file:///C:/Users/user/Desktop/project%20file/new%20project/About%20.html">About</a></li>
+                <li><a href="file:///C:/Users/user/Desktop/project%20file/new%20project/Resources.html">Resources</a></li>
+                <li><a href="file:///C:/Users/user/Desktop/project%20file/new%20project/contact.html">Contact</a></li>
+            </ul>
+            <input type="text" placeholder="Search...">
+        </nav>
+    </header>
+
+
+
+
+
+
+
+<h2><b><u>Past Papers</h2>
+
+
+    <!-- Container for normal images -->
+    <div class="normal-images">
+	   <div>
+	    <a href="file:///C:/Users/user/Desktop/project%20file/new%20project/past%20papers/past%20paper%20mediums/sinhala%20medium%20subjects%20-%20Copy.html" >
+      <img src="C:\Users\user\Downloads\Capture-removebg-preview.png" alt="Image 2"></div>
+	  <div>
+	  <a href="file:///C:/Users/user/Desktop/project%20file/new%20project/past%20papers/past%20paper%20mediums/english%20medium%20subjects%20-%20Copy.html" >
+        <img src="C:\Users\user\Downloads\Capture-removebg-preview (2).png" alt="Image 2"></div>
+		<div>
+		<a href="file:///C:/Users/user/Desktop/project%20file/new%20project/past%20papers/past%20paper%20mediums/Tamil%20medium%20subjects%20-%20Copy.html" >
+		<img src="C:\Users\user\Downloads\Capture-removebg-preview (3).png" alt="Image 2">
+		 </div>
+    </div>
+
+    <!-- Slideshow Container -->
+    <div class="slideshow-container">
+        <div class="slides">
+            <div class="slide">
+                <img src="C:\Users\user\Downloads\OL-sinhala-pastpapers-2011-2012-2013-2014-2015-2016-2017-2018-2019-2020.jpg" alt="Slide 1" height="200"  width="150">
+            </div>
+            <div class="slide">
+                <img src="C:\Users\user\Downloads\unnamed.png" alt="Slide 2"  height="200px"  width="150px"  >
+            </div>
+            <div class="slide">
+                <img src="C:\Users\user\Downloads\2019-OL-Past-Papers-and-Answers-in-Sinhala-Medium.jpg" alt="Slide 3"  height="200px"  width="150px"  >
+            </div>
+			 <div class="slide">
+                <img src="C:\Users\user\Downloads\OLevel-English-language-pastpaper-2009-2010-2012-2013-2014-2015.jpg" alt="Slide 4"  height="200px"  width="150px"  >
+            </div>
+        </div>
+        <!-- Navigation dots -->
+        <div class="dot-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+			<span class="dot"></span>
+        </div>
+    </div>
+<body background="C:\Users\user\Downloads\81767.jpg">
+    <script>
+        let slideIndex = 0;
+        const slides = document.querySelectorAll('.slide');
+        const dots = document.querySelectorAll('.dot');
+
+        function showSlides() {
+            // Hide all slides
+            slides.forEach(slide => slide.style.display = "none");
+            dots.forEach(dot => dot.classList.remove('active-dot'));
+
+            // Show the current slide
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].classList.add('active-dot');
+
+            // Set timer for next slide
+            setTimeout(showSlides, 3000); // Change slide every 3 seconds
+        }
+
+        // Initially show the first slide
+        showSlides();
+    </script>
+<footer>
+        <p>&copy; 2024 EduSite. All rights reserved.</p>
+		
+		
+		
+		
+		
+		
+		
+    </footer>
+	
+
+</body>
+</html>
